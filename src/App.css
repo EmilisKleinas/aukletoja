@@ -36,3 +36,59 @@
     transform: rotate(360deg);
   }
 }
+.shit {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url(imgs/BeFunky-collage.jpg);
+  background-size: 2448px 1516px;
+}
+
+html {
+  scroll-snap-type: both mandatory;
+  scroll-behavior: smooth;
+}
+
+nav a {
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+  margin-right: 2rem;
+  color: #eee;
+  text-decoration: none;
+  transition: all 400ms;
+}
+
+nav a:hover {
+  color: #00fc58;
+}
+
+nav div a {
+  margin: 2rem 0;
+  padding: 0;
+  font-size: 1.5rem;
+  color: #eee;
+  text-decoration: none;
+  transition: all 400ms;
+}
+
+nav div a:hover {
+  color: #00fc58;
+}
+
+.scrollable {
+  scroll-behavior: smooth;
+  scroll-snap-type: mandatory;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.scrollable::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollChild {
+  scroll-snap-align: center;
+}

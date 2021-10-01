@@ -1,24 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import Logo from './components/logo'
+import Reasons from './components/reasonsBox'
+import Navbar from './components/navbar'
+import './App.css'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
+const url = 'imgs/beFunky-collage.jpg';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <section style={{scrollSnapType:'y mandatory', scrollBehavior:'smooth', position:'relative'}}>
+      <Logo url={url} name='Lina Alekserūnienė' bio='Geriausia auklėtoja pasaulyje' style={{scrollSnapAlign:'center'}}></Logo>
+      <Reasons style={{scrollSnapAlign:'center'}}></Reasons>
+      <Navbar></Navbar>
+    </section>
   );
 }
 
